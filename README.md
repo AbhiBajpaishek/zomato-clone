@@ -1,3 +1,7 @@
+                                ZOMATO-CLONE
+
+This is an effort to clone the Zomate web application using React and Typescript.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
