@@ -1,0 +1,12 @@
+.brand-header {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.brand-header_brand {
+}
+
+.brand-header_title {
+}

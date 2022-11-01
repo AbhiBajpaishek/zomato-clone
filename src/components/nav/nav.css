@@ -1,1 +1,27 @@
-.
+.nav {
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 1.2rem;
+  font-weight: 300;
+  height: 4.2rem;
+}
+
+.nav-items {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  width: 35rem;
+}
+.nav-items a {
+  text-decoration: none;
+  color: white;
+  font-weight: 200;
+}
+
+.nav-btn {
+  text-decoration: none;
+  color: white;
+  font-size: 0.9rem;
+}
