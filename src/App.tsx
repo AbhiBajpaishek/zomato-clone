@@ -1,3 +1,4 @@
+import { Card } from 'components/card/Card';
 import { SearchBar } from 'components/searchbar/searchBar';
 import React from 'react';
 import './App.css';
@@ -10,6 +11,7 @@ const App: React.FC = () => (
       <Nav></Nav>
       <BrandHeader></BrandHeader>
       <SearchBar></SearchBar>
+      <Card></Card>
     </header>
   </div>
 );

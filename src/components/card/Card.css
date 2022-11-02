@@ -1,0 +1,30 @@
+.card {
+  width: 25rem;
+  /* border-radius: 22px; */
+  display: flex;
+  flex-direction: column;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+/* .card img {
+  height: 5rem;
+} */
+
+.card_img {
+  background-image: url('assets/Card_1.avif');
+  background-position: center;
+  background-size: cover;
+  height: 15rem;
+  width: 25rem;
+}
+
+.card_footer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  bottom: 4rem;
+}
