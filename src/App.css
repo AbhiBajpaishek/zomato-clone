@@ -1,7 +1,7 @@
 .app-header {
-  height: 27rem;
+  height: 26.25rem;
   background-image: url('./assets/header_bg.jpg');
   background-repeat: no-repeat;
-  background-position: top;
+  background-position: 50% 50%;
   background-size: cover;
 }
