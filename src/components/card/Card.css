@@ -1,30 +1,30 @@
 .card {
   width: 25rem;
-  /* border-radius: 22px; */
   display: flex;
   flex-direction: column;
   border-radius: 1rem;
   overflow: hidden;
 }
 
-/* .card img {
-  height: 5rem;
-} */
-
-.card_img {
-  background-image: url('assets/Card_1.avif');
-  background-position: center;
+.card-img {
+  background-position: 0% 40%;
   background-size: cover;
-  height: 15rem;
+  height: 11rem;
   width: 25rem;
 }
 
-.card_footer {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  background-color: white;
-  bottom: 4rem;
+.card-footer {
+  padding: 1rem;
+}
+
+.card-footer_heading {
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+.card-footer_info {
+  margin-block-start: 0.7rem;
+  margin-block-end: 0;
+  font-weight: lighter;
+  font-size: 1rem;
 }

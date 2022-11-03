@@ -1,13 +1,21 @@
 import './Card.css';
 
-export const Card: React.FC = () => {
+type Props = {
+  imgPath: string | undefined;
+  heading: string;
+  info: string;
+};
+
+export const Card: React.FC<Props> = (props) => {
   return (
     <div className="card">
-      {/* <img src={card1} alt="Food plate" /> */}
-      <div className="card_img"></div>
-      <div className="card_footer">
-        <article>Order Online</article>
-        <h5>Stay home and order to your doorstep</h5>
+      <div
+        className="card-img"
+        style={{ backgroundImage: props.imgPath }}
+      ></div>
+      <div className="card-footer">
+        <h3 className="card-footer_heading">{props.heading}</h3>
+        <h5 className="card-footer_info">{props.info}</h5>
       </div>
     </div>
   );

@@ -5,3 +5,10 @@
   background-position: 50% 50%;
   background-size: cover;
 }
+
+.products {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 3rem 8rem;
+}
