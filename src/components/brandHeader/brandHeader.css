@@ -12,4 +12,12 @@
 
 .brand-header_title {
   font-size: 2.2rem;
+  text-align: center;
+  margin: 2rem;
+}
+
+@media screen and (max-width: 500px) {
+  .brand-header_title {
+    font-size: 1rem;
+  }
 }

@@ -17,3 +17,15 @@
 .search-bar :focus {
   outline: none;
 }
+
+@media screen and (max-width: 790px) {
+  .search-bar input {
+    width: 36rem;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .search-bar input {
+    width: 25rem;
+  }
+}
