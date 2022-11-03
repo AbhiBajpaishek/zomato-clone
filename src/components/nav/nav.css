@@ -25,3 +25,10 @@
   color: white;
   font-size: 0.9rem;
 }
+
+@media screen and (max-width: 760px) {
+  .nav a,
+  ul {
+    display: none;
+  }
+}

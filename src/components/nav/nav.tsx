@@ -1,8 +1,10 @@
+import { HamburgerMenu } from 'components/hamburger/HamburgerMenu';
 import './nav.css';
 
 export const Nav: React.FC = () => {
   return (
     <nav className="nav">
+      <HamburgerMenu></HamburgerMenu>
       <a href="index.html" className="nav-btn">
         Get the App
       </a>
