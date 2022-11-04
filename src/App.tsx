@@ -8,6 +8,7 @@ import card3 from 'assets/Card_3.avif';
 import { BrandHeader } from './components/brandHeader/brandHeader';
 import { Nav } from './components/nav/nav';
 import { Collections } from 'components/collections/Collections';
+import { Locations } from 'components/locations/Locations';
 
 const App: React.FC = () => (
   <div className="app">
@@ -35,6 +36,7 @@ const App: React.FC = () => (
         ></Card>
       </div>
       <Collections></Collections>
+      <Locations></Locations>
     </main>
   </div>
 );
