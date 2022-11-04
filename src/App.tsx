@@ -7,6 +7,7 @@ import card2 from 'assets/Card_2.avif';
 import card3 from 'assets/Card_3.avif';
 import { BrandHeader } from './components/brandHeader/brandHeader';
 import { Nav } from './components/nav/nav';
+import { Collections } from 'components/collections/Collections';
 
 const App: React.FC = () => (
   <div className="app">
@@ -33,6 +34,7 @@ const App: React.FC = () => (
           info="Explore the city's top nightlife outlets"
         ></Card>
       </div>
+      <Collections></Collections>
     </main>
   </div>
 );

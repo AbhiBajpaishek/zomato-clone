@@ -6,7 +6,7 @@ type Props = {
   info: string;
 };
 
-export const Card: React.FC<Props> = (props) => {
+export const Card: React.FC<Props> = (props: Props) => {
   return (
     <div className="card">
       <div
