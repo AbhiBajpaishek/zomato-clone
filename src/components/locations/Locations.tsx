@@ -12,7 +12,7 @@ const cityList: City[] = [
   { city: 'Ashiyana', numberOfPlaces: 418 },
   { city: 'Chowk', numberOfPlaces: 193 },
   { city: 'Aminabad', numberOfPlaces: 57 },
-  { city: 'See more', numberOfPlaces: 57 },
+  { city: 'See more', numberOfPlaces: 58 },
 ];
 
 export const Locations: React.FC = () => {
