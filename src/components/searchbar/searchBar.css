@@ -1,0 +1,31 @@
+.search-bar {
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+
+.search-bar input {
+  padding: 1.3rem 0.5rem;
+  width: 48rem;
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-bottom-style: hidden;
+  border-radius: 0.5rem;
+}
+
+.search-bar :focus {
+  outline: none;
+}
+
+@media screen and (max-width: 790px) {
+  .search-bar input {
+    width: 36rem;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .search-bar input {
+    width: 25rem;
+  }
+}

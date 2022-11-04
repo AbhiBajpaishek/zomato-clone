@@ -1,0 +1,17 @@
+.image-card {
+  background-repeat: no-repeat;
+  height: 18rem;
+  width: 16rem;
+  background-size: cover;
+  box-shadow: inset 0px -54px 77px -3px black;
+  border-radius: 0.4rem;
+}
+
+.image-card_child {
+  position: relative;
+  top: 14.7rem;
+  color: white;
+  padding: 0 1rem;
+  font-size: 1.1rem;
+  text-decoration: none;
+}

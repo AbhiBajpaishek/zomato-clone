@@ -1,0 +1,17 @@
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.hamburger-stick {
+  height: 3px;
+  width: 1.7rem;
+  margin: 0.4rem;
+  background-color: white;
+}
+
+@media screen and (max-width: 760px) {
+  .hamburger {
+    display: block;
+  }
+}

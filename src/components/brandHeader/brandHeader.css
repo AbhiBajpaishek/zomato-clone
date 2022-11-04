@@ -1,0 +1,23 @@
+.brand-header {
+  margin-top: 3rem;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.brand-header_img {
+  height: 3.5rem;
+}
+
+.brand-header_title {
+  font-size: 2.2rem;
+  text-align: center;
+  margin: 2rem;
+}
+
+@media screen and (max-width: 500px) {
+  .brand-header_title {
+    font-size: 1rem;
+  }
+}

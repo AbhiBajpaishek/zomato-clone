@@ -1,0 +1,32 @@
+.collections {
+  margin: 0 14rem;
+  padding: 1rem;
+}
+
+.collections-title {
+  font-size: 2rem;
+  margin-block-start: 0;
+  margin-block-end: 0.5rem;
+  font-weight: 100;
+}
+.collections-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.collections-info_text {
+  font-size: 1.2rem;
+  font-weight: 100;
+  margin-block-start: 0;
+  opacity: 0.6;
+}
+
+.collections-info_button {
+  text-decoration: none;
+  color: red;
+}
+
+.collection-cards {
+  display: flex;
+  justify-content: space-between;
+}
