@@ -5,6 +5,7 @@
   background-size: cover;
   box-shadow: inset 0px -54px 77px -3px black;
   border-radius: 0.4rem;
+  /* flex: 1 1 14rem;*/
 }
 
 .image-card_child {
