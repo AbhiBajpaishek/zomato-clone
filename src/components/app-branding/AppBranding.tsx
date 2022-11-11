@@ -2,6 +2,7 @@ import React from 'react';
 import './AppBranding.css';
 import img from '../../assets/mobile.avif';
 import { InputText } from 'components/ui/InputText';
+import { InputRadio } from 'components/ui/InputRadio';
 
 export const AppBranding: React.FC = () => {
   return (
@@ -17,16 +18,24 @@ export const AppBranding: React.FC = () => {
           </article>
         </div>
         <form className="get-app_form">
-          <div>
-            <input type="radio"></input> Email
-            <input type="radio"></input> Phone
+          <div className="form-radio-inputs">
+            <InputRadio
+              name="download-medium"
+              text="Email"
+              className="input-radio"
+            ></InputRadio>
+            <InputRadio
+              name="download-medium"
+              text="Phone"
+              className="input-radio"
+            ></InputRadio>
           </div>
           <div className="form-text-inputs">
             <InputText type="email" placeholder="Email"></InputText>
             <button>Share App Link</button>
           </div>
 
-          <h6>Download app from</h6>
+          <h6 className="download-text">Download app from</h6>
           <div>
             <button>Play Store</button>
             <button>App Store</button>
