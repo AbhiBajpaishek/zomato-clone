@@ -1,0 +1,58 @@
+.app-branding {
+  background-color: #fffbf7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  padding: 4rem 0;
+}
+
+.app-branding_left-img {
+  height: 15rem;
+  width: 14rem;
+}
+
+.app-heading {
+  width: 27rem;
+}
+
+.app-branding_right {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+}
+
+.app-heading_title {
+  font-size: 3rem;
+  font-weight: 100;
+  margin-block-start: 0.5rem;
+  margin-block-end: 0.5rem;
+}
+
+.app-heading_info {
+  opacity: 0.8;
+  line-height: 2rem;
+}
+
+.get-app_form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+}
+
+.form-radio-inputs {
+  display: flex;
+  gap: 2rem;
+}
+.form-text-inputs {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.download-text {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  opacity: 0.5;
+  font-size: 0.9rem;
+  font-weight: 100;
+}

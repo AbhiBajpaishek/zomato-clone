@@ -1,0 +1,10 @@
+.input-radio_parent {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.input-radio {
+  height: 1rem;
+  width: 1rem;
+  margin: 0;
+}
