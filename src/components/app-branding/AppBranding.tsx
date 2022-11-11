@@ -8,7 +8,7 @@ export const AppBranding: React.FC = () => {
   return (
     <div className="app-branding">
       <div className="app-branding_left">
-        <img src={img} className="app-branding_left-img " />
+        <img src={img} className="app-branding_left-img " alt="mobile app" />
       </div>
       <div className="app-branding_right">
         <div className="app-heading">
