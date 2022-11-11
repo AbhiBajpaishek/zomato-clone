@@ -9,6 +9,7 @@ import { BrandHeader } from './components/brandHeader/brandHeader';
 import { Nav } from './components/nav/nav';
 import { Collections } from 'components/collections/Collections';
 import { Locations } from 'components/locations/Locations';
+import { AppBranding } from 'components/app-branding/AppBranding';
 
 const App: React.FC = () => (
   <div className="app">
@@ -37,6 +38,7 @@ const App: React.FC = () => (
       </div>
       <Collections></Collections>
       <Locations></Locations>
+      <AppBranding></AppBranding>
     </main>
   </div>
 );

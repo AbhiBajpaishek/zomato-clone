@@ -1,0 +1,39 @@
+.app-branding {
+  background-color: #fffbf7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+
+.app-branding_left-img {
+  height: 15rem;
+  width: 14rem;
+}
+
+.app-heading {
+  width: 28rem;
+}
+
+.app-branding_right {
+  display: flex;
+  flex-direction: column;
+}
+
+.app-heading_title {
+  font-size: 3rem;
+  font-weight: 100;
+}
+
+.app-heading_info {
+  opacity: 0.8;
+  line-height: 2rem;
+}
+
+.get-app_form {
+}
+
+.form-text-inputs {
+  display: flex;
+  gap: 1rem;
+}
