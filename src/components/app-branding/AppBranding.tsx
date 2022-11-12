@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './AppBranding.css';
 import img from '../../assets/mobile.avif';
 import g_play from '../../assets/g_play.webp';
@@ -9,6 +9,12 @@ import { Button } from 'components/ui/Button';
 import { CtaButton } from 'components/ui/CtaButton';
 
 export const AppBranding: React.FC = () => {
+  const [isEmailValid, setIsEmailValid] = useState(true);
+
+  const toggleCTA = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setIsEmailValid(e.target.validity.valid);
+  };
+
   return (
     <div className="app-branding">
       <div className="app-branding_left">
@@ -35,8 +41,12 @@ export const AppBranding: React.FC = () => {
             ></InputRadio>
           </div>
           <div className="form-text-inputs">
-            <InputText type="email" placeholder="Email"></InputText>
-            <Button text="Share App Link"></Button>
+            <InputText
+              type="email"
+              placeholder="Email"
+              action={toggleCTA}
+            ></InputText>
+            <Button text="Share App Link" disabled={!isEmailValid}></Button>
           </div>
 
           <h6 className="download-text">Download app from</h6>

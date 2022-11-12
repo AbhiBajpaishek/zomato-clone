@@ -8,8 +8,13 @@
   opacity: 0.5;
   color: black;
   border-style: double;
+  outline: none;
 }
 
-.input-text:focus {
-  opacity: 1;
+.valid {
+  border-color: green;
+}
+
+.invalid {
+  border-color: red;
 }

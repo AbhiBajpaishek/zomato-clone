@@ -8,3 +8,7 @@
   border-width: 0;
   cursor: pointer;
 }
+
+.disabled {
+  background-color: #c0b8b8;
+}
