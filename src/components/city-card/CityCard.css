@@ -3,8 +3,12 @@
   width: 18rem;
   padding: 1rem;
   border-radius: 0.4rem;
-  box-shadow: 0px 0px 9px -2px #c6b3b3;
+  box-shadow: 1px 4px 11px -8px #c6b3b3;
   border: 1px double #dedede;
+}
+
+.city-card:hover {
+  box-shadow: 2px 4px 9px -5px #c6b3b3;
 }
 
 .city-card_city {
