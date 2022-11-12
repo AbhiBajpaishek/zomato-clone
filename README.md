@@ -1,6 +1,8 @@
-                                ZOMATO-CLONE
+# Overview
 
-This is an effort to clone the Zomate web application using React and Typescript.
+This is an effort to clone the Zomate web application using React and Typescript. Click to launch production env:
+
+https://zomatto-clone.netlify.app/
 
 # Getting Started with Create React App
 
