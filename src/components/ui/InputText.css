@@ -4,7 +4,17 @@
   height: 1.8rem;
   width: 18rem;
   border-radius: 0.5rem;
-  border-color: red;
   border-width: 1px;
+  opacity: 0.5;
+  color: black;
   border-style: double;
+  outline: none;
+}
+
+.valid {
+  border-color: green;
+}
+
+.invalid {
+  border-color: red;
 }

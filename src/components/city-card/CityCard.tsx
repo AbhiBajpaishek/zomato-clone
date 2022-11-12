@@ -6,7 +6,6 @@ export const CityCard: React.FC<City> = (props: City) => {
     <div className="city-card">
       <h4 className="city-card_city">{props.city}</h4>
       <span className="city-card_places">{props.numberOfPlaces} places</span>
-      {/* <div className="city-card_icon"> */}
       <i className="i sc-rbbb40-1 iFnyeo sc-lenlpJ hfgDug" color="#1C1C1C">
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -22,7 +21,6 @@ export const CityCard: React.FC<City> = (props: City) => {
           <path d="M6.98 15.94c-0.3-0.28-0.3-0.76 0-1.060l4.46-4.46-4.46-4.48c-0.3-0.28-0.3-0.76 0-1.060s0.76-0.28 1.060 0l5 5c0.28 0.3 0.28 0.78 0 1.060l-5 5c-0.3 0.3-0.78 0.3-1.060 0z"></path>
         </svg>
       </i>
-      {/* </div> */}
     </div>
   );
 };

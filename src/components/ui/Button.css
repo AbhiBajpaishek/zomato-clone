@@ -1,0 +1,14 @@
+.button {
+  background-color: #e03546;
+  color: white;
+  opacity: 0.9;
+  font-size: 1rem;
+  padding: 0.7rem 1rem;
+  border-radius: 0.4rem;
+  border-width: 0;
+  cursor: pointer;
+}
+
+.disabled {
+  background-color: #c0b8b8;
+}

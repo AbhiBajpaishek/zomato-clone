@@ -56,3 +56,8 @@
   font-size: 0.9rem;
   font-weight: 100;
 }
+
+.download-text_buttons {
+  display: flex;
+  gap: 1rem;
+}
