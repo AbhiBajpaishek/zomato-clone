@@ -9,10 +9,25 @@ import { Button } from 'components/ui/Button';
 import { CtaButton } from 'components/ui/CtaButton';
 
 export const AppBranding: React.FC = () => {
-  const [isEmailValid, setIsEmailValid] = useState(true);
+  const [isInputValid, setIsInputValid] = useState(true);
+  const [isEmailChecked, setIsEmailChecked] = useState(true);
 
   const toggleCTA = (e: React.ChangeEvent<HTMLInputElement>) => {
-    setIsEmailValid(e.target.validity.valid);
+    setIsInputValid(e.target.validity.valid);
+  };
+
+  const toggleInputField = (e: React.ChangeEvent<HTMLInputElement>) => {
+    console.log(e);
+    if (e.target.checked) {
+      switch (e.target.value) {
+        case 'Email':
+          setIsEmailChecked(true);
+          break;
+        case 'Phone':
+          setIsEmailChecked(false);
+          break;
+      }
+    }
   };
 
   return (
@@ -33,20 +48,31 @@ export const AppBranding: React.FC = () => {
               name="download-medium"
               text="Email"
               className="input-radio"
+              checked={isEmailChecked}
+              action={toggleInputField}
             ></InputRadio>
             <InputRadio
               name="download-medium"
               text="Phone"
               className="input-radio"
+              action={toggleInputField}
             ></InputRadio>
           </div>
           <div className="form-text-inputs">
-            <InputText
-              type="email"
-              placeholder="Email"
-              action={toggleCTA}
-            ></InputText>
-            <Button text="Share App Link" disabled={!isEmailValid}></Button>
+            {isEmailChecked ? (
+              <InputText
+                type="email"
+                placeholder="Email"
+                action={toggleCTA}
+              ></InputText>
+            ) : (
+              <InputText
+                type="number"
+                placeholder="+91-8604976154"
+                action={toggleCTA}
+              ></InputText>
+            )}
+            <Button text="Share App Link" disabled={!isInputValid}></Button>
           </div>
 
           <h6 className="download-text">Download app from</h6>

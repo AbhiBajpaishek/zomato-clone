@@ -15,7 +15,7 @@ const defaultButtonProps = {
 export const Button: React.FC<ButtonProps> = (props: ButtonProps) => {
   return (
     <button
-      disabled={true}
+      disabled={props.disabled}
       className={`button ${props.className ?? ''}  ${
         props.disabled ? 'disabled' : ''
       }`}
