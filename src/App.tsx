@@ -10,6 +10,7 @@ import { Nav } from './components/nav/nav';
 import { Collections } from 'components/collections/Collections';
 import { Locations } from 'components/locations/Locations';
 import { AppBranding } from 'components/app-branding/AppBranding';
+import { Login } from 'components/login/Login';
 
 const App: React.FC = () => (
   <div className="app">
@@ -39,6 +40,7 @@ const App: React.FC = () => (
       <Collections></Collections>
       <Locations></Locations>
       <AppBranding></AppBranding>
+      <Login></Login>
     </main>
   </div>
 );

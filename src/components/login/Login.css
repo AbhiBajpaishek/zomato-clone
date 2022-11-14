@@ -1,0 +1,15 @@
+.login-panel {
+  position: fixed;
+  height: 30rem;
+  width: 30rem;
+  top: 11rem;
+  left: 31rem;
+  margin: auto;
+  background-color: white;
+  border-radius: 6px;
+}
+
+.login-panel_main {
+  display: flex;
+  flex-direction: column;
+}
