@@ -1,9 +1,10 @@
 .login-panel {
   position: fixed;
   height: 30rem;
-  width: 30rem;
-  top: 11rem;
-  left: 31rem;
+  width: 28rem;
+  top: 19%;
+  left: 13%;
+  right: 13%;
   margin: auto;
   background-color: white;
   border-radius: 6px;

@@ -1,7 +1,17 @@
 import { HamburgerMenu } from 'components/hamburger/HamburgerMenu';
+import React, { FormEvent } from 'react';
 import './nav.css';
 
-export const Nav: React.FC = () => {
+type NavProps = {
+  toggleModal: Function;
+};
+
+export const Nav: React.FC<NavProps> = (props: NavProps) => {
+  const showLogin = (e: FormEvent) => {
+    e.target.removeEventListener('click', () => {});
+    props.toggleModal(true);
+  };
+
   return (
     <nav className="nav">
       <HamburgerMenu></HamburgerMenu>
@@ -16,7 +26,12 @@ export const Nav: React.FC = () => {
           <a href="index.html">Add restaurant</a>
         </li>
         <li>
-          <a href="index.html">Log in</a>
+          {
+            // eslint-disable-next-line
+            <a href="#" onClick={showLogin}>
+              Log in
+            </a>
+          }
         </li>
         <li>
           <a href="index.html">Sign up</a>
