@@ -9,7 +9,38 @@
   border-radius: 6px;
 }
 
+.login-head {
+  padding: 0 2rem;
+  font-size: 1.9rem;
+  font-weight: 500;
+}
+
 .login-panel_main {
   display: flex;
   flex-direction: column;
+  width: 90%;
+  margin: auto;
+  gap: 1rem;
+}
+
+.login-number {
+  width: auto;
+}
+
+.login-btn {
+  background-color: white;
+  color: black;
+  border: 1px double lightgrey;
+}
+
+.email-span {
+  margin-left: 1rem;
+}
+
+.gmail-span {
+  margin-left: 1rem;
+}
+
+.icon {
+  vertical-align: middle;
 }
