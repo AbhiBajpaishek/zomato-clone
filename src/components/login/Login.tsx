@@ -19,8 +19,8 @@ export const Login: React.FC<LoginProps> = (props: LoginProps) => {
               className="login-number"
               placeholder={'Phone'}
             ></InputText>
-            <Button text=""> Send One Time Password</Button>
-            <Button className="login-btn" text="">
+            <Button> Send One Time Password</Button>
+            <Button className="login-btn">
               <i className="sc-rbbb40-1 fDHLHG" color="#EF4F5F">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -38,7 +38,7 @@ export const Login: React.FC<LoginProps> = (props: LoginProps) => {
               </i>
               <span className="email-span">Continue With Email</span>
             </Button>
-            <Button className="login-btn" text="">
+            <Button className="login-btn">
               <svg
                 className="icon"
                 width="24"

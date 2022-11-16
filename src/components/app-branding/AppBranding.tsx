@@ -72,7 +72,7 @@ export const AppBranding: React.FC = () => {
                 action={toggleCTA}
               ></InputText>
             )}
-            <Button text="Share App Link" disabled={!isInputValid}></Button>
+            <Button disabled={!isInputValid}>Share App Link</Button>
           </div>
 
           <h6 className="download-text">Download app from</h6>

@@ -13,6 +13,10 @@ const Backdrop = (props: any) => {
   );
 };
 
+const Overlay: React.FC<any> = ({ children }: any) => {
+  return <div className="overlay">{children}</div>;
+};
+
 type ModalProps = {
   modalClickAction?: Function;
   children: ReactElement;
@@ -24,11 +28,11 @@ const Modal = (props: ModalProps) => {
     <>
       {myModal &&
         ReactDOM.createPortal(
-          <Backdrop onClick={props.modalClickAction}>
-            {props.children}
-          </Backdrop>,
+          <Backdrop onClick={props.modalClickAction}></Backdrop>,
           myModal
         )}
+      {myModal &&
+        ReactDOM.createPortal(<Overlay>{props.children}</Overlay>, myModal)}
     </>
   );
 };
