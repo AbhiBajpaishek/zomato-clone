@@ -1,11 +1,11 @@
-import { FocusEventHandler, useState } from 'react';
+import { ChangeEventHandler, useState } from 'react';
 import './InputText.css';
 
 type InputTextProps = {
   type: string;
   placeholder: string;
   className?: string;
-  action?: FocusEventHandler<HTMLInputElement>;
+  action?: ChangeEventHandler<HTMLInputElement>;
 };
 
 export const InputText: React.FC<InputTextProps> = (props: InputTextProps) => {
@@ -17,6 +17,7 @@ export const InputText: React.FC<InputTextProps> = (props: InputTextProps) => {
     e.target.classList.remove('valid');
     e.target.classList.remove('invalid');
     e.target.classList.add(e.target.validity.valid ? 'valid' : 'invalid');
+    props.action && props.action(e);
   };
 
   return (
@@ -26,7 +27,7 @@ export const InputText: React.FC<InputTextProps> = (props: InputTextProps) => {
       placeholder={props.placeholder}
       value={text}
       onChange={onEmailEditing}
-      onBlur={props.action}
+      // onFocus={props.action}
     />
   );
 };
