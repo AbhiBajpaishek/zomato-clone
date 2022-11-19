@@ -1,4 +1,5 @@
 import { Button } from 'components/ui/Button';
+import { HorizontalLine } from 'components/ui/HorizontalLine';
 import { InputText } from 'components/ui/InputText';
 import Modal from 'components/ui/modal';
 import './Login.css';
@@ -8,11 +9,22 @@ type LoginProps = {
 };
 
 export const Login: React.FC<LoginProps> = (props: LoginProps) => {
+  const onCancelClick = () => {
+    props.toggleModal();
+  };
+
   return (
     <>
       <Modal modalClickAction={props.toggleModal}>
         <div className="login-panel">
-          <h4 className="login-head">Login</h4>
+          <div className="login-panel_head">
+            <h4 className="login-head">Login</h4>
+            <i
+              className="fa fa-times cancel-icon"
+              aria-hidden="true"
+              onClick={onCancelClick}
+            ></i>
+          </div>
           <section className="login-panel_main">
             <InputText
               type="number"
@@ -20,6 +32,7 @@ export const Login: React.FC<LoginProps> = (props: LoginProps) => {
               placeholder={'Phone'}
             ></InputText>
             <Button> Send One Time Password</Button>
+            <HorizontalLine text="or"></HorizontalLine>
             <Button className="login-btn">
               <i className="sc-rbbb40-1 fDHLHG" color="#EF4F5F">
                 <svg
@@ -66,6 +79,16 @@ export const Login: React.FC<LoginProps> = (props: LoginProps) => {
               </svg>
               <span className="gmail-span">Continue With Google</span>
             </Button>
+            <HorizontalLine text=""></HorizontalLine>
+            <span className="login-footer">
+              New to Zomato?
+              <span
+                onClick={() => console.log('New Account')}
+                className="create-account__link"
+              >
+                Create account
+              </span>
+            </span>
           </section>
         </div>
       </Modal>

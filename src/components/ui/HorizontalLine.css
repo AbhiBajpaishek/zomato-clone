@@ -1,0 +1,19 @@
+.horizontal-line {
+  position: relative;
+}
+
+.line {
+  width: 100%;
+  border: 1px solid #ede6e6;
+  border-top: 0;
+}
+
+.horizontal-line_text {
+  position: absolute;
+  padding: 0 0.5rem;
+  top: -4px;
+  left: 43%;
+  font-size: 1.2rem;
+  background-color: white;
+  color: #787070;
+}
