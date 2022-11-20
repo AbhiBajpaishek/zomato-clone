@@ -3,13 +3,19 @@ import React, { FormEvent } from 'react';
 import './nav.css';
 
 type NavProps = {
-  toggleModal: Function;
+  toggleLogin: Function;
+  toggleSignUp: Function;
 };
 
 export const Nav: React.FC<NavProps> = (props: NavProps) => {
   const showLogin = (e: FormEvent) => {
     e.target.removeEventListener('click', () => {});
-    props.toggleModal(true);
+    props.toggleLogin(true);
+  };
+
+  const showSignup = (e: FormEvent) => {
+    e.target.removeEventListener('click', () => {});
+    props.toggleSignUp(true);
   };
 
   return (
@@ -34,7 +40,12 @@ export const Nav: React.FC<NavProps> = (props: NavProps) => {
           }
         </li>
         <li>
-          <a href="index.html">Sign up</a>
+          {
+            // eslint-disable-next-line
+            <a href="#" onClick={showSignup}>
+              Sign up
+            </a>
+          }
         </li>
       </ul>
     </nav>

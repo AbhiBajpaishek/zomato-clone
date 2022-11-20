@@ -14,16 +14,21 @@ import { Login } from 'components/login/Login';
 import { Signup } from 'components/signup/Signup';
 
 const App: React.FC = () => {
-  const [modal, toggleModal] = useState(false);
+  const [isLoginVisible, toggleLogin] = useState(false);
+  const [isSignupVisible, toggleSignup] = useState(false);
 
-  const enableModal = (flag: boolean) => {
-    toggleModal(flag);
+  const showLogin = (flag: boolean) => {
+    toggleLogin(flag);
+  };
+
+  const showSignup = (flag: boolean) => {
+    toggleSignup(flag);
   };
 
   return (
     <div className="app">
       <header className="app-header">
-        <Nav toggleModal={enableModal}></Nav>
+        <Nav toggleLogin={showLogin} toggleSignUp={showSignup}></Nav>
         <BrandHeader></BrandHeader>
         <SearchBar></SearchBar>
       </header>
@@ -48,8 +53,8 @@ const App: React.FC = () => {
         <Collections></Collections>
         <Locations></Locations>
         <AppBranding></AppBranding>
-        {modal && <Login toggleModal={enableModal}></Login>}
-        {modal && <Signup toggleModal={enableModal}></Signup>}
+        {isLoginVisible && <Login toggleModal={toggleLogin}></Login>}
+        {isSignupVisible && <Signup toggleModal={toggleSignup}></Signup>}
       </main>
     </div>
   );
