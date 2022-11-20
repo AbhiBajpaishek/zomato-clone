@@ -4,11 +4,12 @@ type Props = {
   imgPath: string | undefined;
   heading: string;
   info: string;
+  className?: string;
 };
 
 export const Card: React.FC<Props> = (props: Props) => {
   return (
-    <div className="card">
+    <div className={`${props.className ? props.className : ''} card`}>
       <div
         className="card-img"
         style={{ backgroundImage: props.imgPath }}

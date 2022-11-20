@@ -17,3 +17,11 @@ main {
   margin: 3rem 0;
   gap: 1rem;
 }
+
+.products-card {
+  transition: transform 300ms;
+}
+
+.products-card:hover {
+  transform: scale(1.07);
+}

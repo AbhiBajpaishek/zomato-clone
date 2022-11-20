@@ -4,6 +4,7 @@
   flex-shrink: 0;
   border-radius: 1rem;
   overflow: hidden;
+  cursor: pointer;
 }
 
 .card-img {

@@ -35,16 +35,19 @@ const App: React.FC = () => {
       <main>
         <div className="products">
           <Card
+            className="products-card"
             imgPath={`url(${card1}`}
             heading="Order Online"
             info="Stay home and order at your doorstep"
           ></Card>
           <Card
+            className="products-card"
             imgPath={`url(${card2}`}
             heading="Dining"
             info="View the city's favourite dining venues"
           ></Card>
           <Card
+            className="products-card"
             imgPath={`url(${card3}`}
             heading="Nightlife and Clubs"
             info="Explore the city's top nightlife outlets"
