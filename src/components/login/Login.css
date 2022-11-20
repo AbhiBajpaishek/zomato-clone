@@ -1,4 +1,4 @@
-.login-panel {
+/* .login-panel {
   position: fixed;
   height: 32rem;
   width: 28rem;
@@ -8,62 +8,41 @@
   margin: auto;
   background-color: white;
   border-radius: 6px;
-}
+} */
 
-.login-panel_head {
-  display: flex;
-  width: 90%;
-  justify-content: space-between;
-  margin: auto;
-}
-
-.login-head {
-  font-size: 1.9rem;
-  font-weight: 500;
-  margin-block-start: 1rem;
-  color: darkslategrey;
-}
-
-.login-panel_main {
+/* .login-panel_main {
   display: flex;
   flex-direction: column;
   width: 90%;
   margin: auto;
   gap: 1.6rem;
-}
+} */
 
-.login-number {
+/* .login-number {
   width: auto;
-}
+} */
 
-.login-btn {
+/* .login-btn {
   background-color: white;
   color: black;
   border: 1px double lightgrey;
-}
+} */
 
-.email-span {
+/* .email-span {
   margin-left: 1rem;
 }
 
 .gmail-span {
   margin-left: 1rem;
-}
+} */
 
 .icon {
   vertical-align: middle;
 }
 
-.cancel-icon {
-  margin-block-start: 1rem;
-  font-size: 1.2rem;
-  font-weight: 600;
-  cursor: pointer;
-}
-
-.login-footer {
+/* .login-footer {
   color: grey;
-}
+} */
 
 .create-account__link {
   cursor: pointer;
