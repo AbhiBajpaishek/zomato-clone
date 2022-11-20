@@ -1,0 +1,8 @@
+.tnc {
+  font-size: 0.8rem;
+}
+
+.tnc-clickable {
+  cursor: pointer;
+  color: red;
+}

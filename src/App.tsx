@@ -11,6 +11,7 @@ import { Collections } from 'components/collections/Collections';
 import { Locations } from 'components/locations/Locations';
 import { AppBranding } from 'components/app-branding/AppBranding';
 import { Login } from 'components/login/Login';
+import { Signup } from 'components/signup/Signup';
 
 const App: React.FC = () => {
   const [modal, toggleModal] = useState(false);
@@ -48,6 +49,7 @@ const App: React.FC = () => {
         <Locations></Locations>
         <AppBranding></AppBranding>
         {modal && <Login toggleModal={enableModal}></Login>}
+        {modal && <Signup toggleModal={enableModal}></Signup>}
       </main>
     </div>
   );
