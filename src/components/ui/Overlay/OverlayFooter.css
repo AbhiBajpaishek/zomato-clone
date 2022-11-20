@@ -1,0 +1,9 @@
+.icon {
+  vertical-align: middle;
+}
+
+.create-account__link {
+  cursor: pointer;
+  color: #ff0000ab;
+  margin-inline-start: 4px;
+}

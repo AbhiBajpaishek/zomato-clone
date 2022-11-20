@@ -1,0 +1,29 @@
+.login-panel_main {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: auto;
+  gap: 1.6rem;
+}
+
+.login-btn {
+  background-color: white;
+  color: black;
+  border: 1px double lightgrey;
+}
+
+.login-footer {
+  color: grey;
+}
+
+.login-number {
+  width: auto;
+}
+
+.email-span {
+  margin-left: 1rem;
+}
+
+.gmail-span {
+  margin-left: 1rem;
+}
