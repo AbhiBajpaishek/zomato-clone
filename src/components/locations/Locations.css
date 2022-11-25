@@ -1,5 +1,4 @@
 .locations {
-  margin: 4rem 14.7rem;
 }
 
 .locations-title {
@@ -11,6 +10,6 @@
 .city-cards {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
-  gap: 2rem;
+  justify-content: space-between;
+  gap: 1rem;
 }

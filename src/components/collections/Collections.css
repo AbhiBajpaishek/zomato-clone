@@ -1,6 +1,5 @@
 .collections {
   /* margin: 0 14rem; */
-  padding: 1rem;
 }
 
 .collection-header {
@@ -10,7 +9,6 @@
 
 .collections-title {
   font-size: 2rem;
-  margin: 0 14rem;
   margin-block-start: 0;
   margin-block-end: 0.5rem;
   font-weight: 100;
@@ -18,7 +16,6 @@
 .collections-info {
   display: flex;
   justify-content: space-between;
-  margin: 0 14rem;
 }
 
 .collections-info_text {
@@ -36,6 +33,5 @@
 .collection-cards {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  gap: 1rem;
+  justify-content: space-between;
 }
