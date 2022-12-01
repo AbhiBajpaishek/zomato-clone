@@ -12,13 +12,14 @@ export const OverlayBody: React.FC = () => {
     fetch('http://127.0.0.1:5000/api/otp', {
       method: 'post',
       body: JSON.stringify({
-        number: 8604976154,
+        number: numberRef.current?.value,
       }),
       headers: {
         'Content-Type': 'application/json',
       },
     })
       .then((res) => {
+        if (numberRef.current) numberRef.current.value = '';
         return res.text();
       })
       .then((otp) => console.log('OTP: ' + otp));
