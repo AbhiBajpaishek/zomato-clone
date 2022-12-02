@@ -17,7 +17,6 @@ export const AppBranding: React.FC = () => {
   };
 
   const toggleInputField = (e: React.ChangeEvent<HTMLInputElement>) => {
-    console.log(e);
     if (e.target.checked) {
       switch (e.target.value) {
         case 'Email':

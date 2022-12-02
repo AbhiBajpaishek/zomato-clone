@@ -1,3 +1,4 @@
+import { useRef } from 'react';
 import { Button } from '../Button';
 import { HorizontalLine } from '../HorizontalLine';
 import { InputText } from '../InputText';
@@ -5,14 +6,34 @@ import './OverlayBody.css';
 import { OverlayFooter } from './OverlayFooter';
 
 export const OverlayBody: React.FC = () => {
+  const numberRef = useRef<HTMLInputElement>(null);
+
+  const sendOtp = () => {
+    fetch('http://127.0.0.1:5000/api/otp', {
+      method: 'post',
+      body: JSON.stringify({
+        number: numberRef.current?.value,
+      }),
+      headers: {
+        'Content-Type': 'application/json',
+      },
+    })
+      .then((res) => {
+        if (numberRef.current) numberRef.current.value = '';
+        return res.text();
+      })
+      .then((otp) => console.log('OTP: ' + otp));
+  };
+
   return (
     <section className="login-panel_main">
       <InputText
+        ref={numberRef}
         type="number"
         className="login-number"
         placeholder={'Phone'}
       ></InputText>
-      <Button> Send One Time Password</Button>
+      <Button onSubmit={sendOtp}> Send One Time Password</Button>
       <HorizontalLine text="or"></HorizontalLine>
       <Button className="login-btn">
         <i className="sc-rbbb40-1 fDHLHG" color="#EF4F5F">
