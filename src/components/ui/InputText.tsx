@@ -1,12 +1,15 @@
-import React from 'react';
+import React, { KeyboardEventHandler } from 'react';
 import { ChangeEventHandler, useState } from 'react';
 import './InputText.css';
 
 type InputTextProps = {
   type: string;
   placeholder: string;
+  id?: string;
+  maxLength?: number;
   className?: string;
   action?: ChangeEventHandler<HTMLInputElement>;
+  onKeyUp?: KeyboardEventHandler<HTMLInputElement>;
 };
 
 export const InputText = React.forwardRef<HTMLInputElement, InputTextProps>(
@@ -26,10 +29,13 @@ export const InputText = React.forwardRef<HTMLInputElement, InputTextProps>(
       <input
         type={props.type}
         ref={ref}
+        id={props.id}
+        maxLength={props.maxLength}
         className={`input-text ${props.className ?? ''}`}
         placeholder={props.placeholder}
         value={text}
         onChange={onEmailEditing}
+        onKeyUp={props.onKeyUp}
       />
     );
   }
